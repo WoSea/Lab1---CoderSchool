@@ -52,6 +52,7 @@
         android:textAllCaps="true" />
 
     <TextView
+        android:id="@+id/tvForgotpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnLogin"
@@ -59,16 +60,18 @@
         android:layout_marginTop="10dp"
         android:text="Forgot pasword"
         android:textColor="#FFF"
-        android:id="@+id/tvForgotpass"/>
+        android:textSize="16dp" />
 
 
     <TextView
+        android:id="@+id/tvSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:text="Forgot pasword"
+        android:text="Sign Up for Facebook"
         android:textColor="#FFF"
-         android:id="@+id/tvSignup"/>
+        android:textSize="16dp" />
 </RelativeLayout>
