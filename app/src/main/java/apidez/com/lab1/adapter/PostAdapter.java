@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 import apidez.com.lab1.R;
@@ -61,15 +63,7 @@ public class PostAdapter extends ArrayAdapter<Post> {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-
-        Post post=getItem(position);
-        // Populate the data into the template view using the data object
-        viewHolder.tvUsername.setText(post.getUsername());
-        viewHolder.tvDescription.setText(post.getDescription());
-        viewHolder.tvDate.setText(post.getDate());
-        loadImage(viewHolder.ivImage, post.getImage());
-        loadImage(viewHolder.ivAvatar, post.getAvatar());
-        // Return the completed view to render on screen
+        bindViewHolder(position, viewHolder);
 
         return convertView;
     }
@@ -77,10 +71,19 @@ public class PostAdapter extends ArrayAdapter<Post> {
     private void bindViewHolder(int position, ViewHolder viewHolder) {
         Post post = mPosts.get(position);
         // TODO: Insert your code
+        viewHolder.tvUsername.setText(post.getUsername());
+        viewHolder.tvDescription.setText(post.getDescription());
+        viewHolder.tvDate.setText(post.getDate());
+        loadImage(viewHolder.ivImage, post.getImage());
+        loadImage(viewHolder.ivAvatar, post.getAvatar());
     }
 
     private void loadImage(ImageView imageView, String path) {
         // TODO: Insert your code
+        Picasso.with(getContext())
+                .load(path)
+                .placeholder(R.drawable.placeholder)
+                .into(imageView);
     }
 
     public class ViewHolder {

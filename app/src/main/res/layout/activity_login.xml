@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/ivLogo"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/two_hundred_dp"
+        android:layout_height="@dimen/one_hundred_dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/fifty_dp"
         android:scaleType="centerCrop"
         android:src="@drawable/logo" />
 
@@ -20,9 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivLogo"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="your email"
+        android:layout_marginLeft="@dimen/twenty_dp"
+        android:layout_marginRight="@dimen/twenty_dp"
+        android:hint="@string/your_email_hint"
         android:textSize="16dp" />
 
     <EditText
@@ -30,11 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edtEmail"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:hint="Password"
-        android:textSize="16dp" />
+        android:layout_marginLeft="@dimen/twenty_dp"
+        android:layout_marginRight="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:hint="@string/your_password_hint"
+        android:textSize="@dimen/text_size_login" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -42,14 +42,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edtPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/twenty_dp"
+        android:layout_marginRight="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/ten_dp"
         android:background="@drawable/button"
         android:gravity="center"
-        android:padding="16dp"
         android:text="login"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_login"/>
 
     <TextView
         android:id="@+id/tvForgotpass"
@@ -57,10 +57,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btnLogin"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:text="Forgot pasword"
-        android:textColor="#FFF"
-        android:textSize="16dp" />
+        android:layout_marginTop="@dimen/ten_dp"
+        android:text="@string/forgot_pasword"
+        android:textColor="@color/colorTextLogin"
+        android:textSize="@dimen/text_size_login" />
 
 
     <TextView
@@ -69,9 +69,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:text="Sign Up for Facebook"
-        android:textColor="#FFF"
-        android:textSize="16dp" />
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:text="@string/sign_up_for_facebook"
+        android:textColor="@color/colorTextLogin"
+        android:textSize="@dimen/text_size_login" />
 </RelativeLayout>

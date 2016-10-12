@@ -5,4 +5,10 @@
     <dimen name="size_normal">16sp</dimen>
     <dimen name="space_large">20dp</dimen>
     <dimen name="size_small">14sp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="text_size_login">16sp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="one_hundred_dp">100dp</dimen>
+    <dimen name="two_hundred_dp">200dp</dimen>
 </resources>

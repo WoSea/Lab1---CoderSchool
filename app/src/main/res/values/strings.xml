@@ -6,4 +6,8 @@
     <string name="sign_up">Sign Up for Facebook</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="new_feed">New feed</string>
+    <string name="forgot_pasword">Forgot pasword</string>
+    <string name="sign_up_for_facebook">Sign Up for Facebook</string>
+    <string name="your_email_hint">Your Email</string>
+    <string name="your_password_hint">Your Password</string>
 </resources>
